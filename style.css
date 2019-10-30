@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     z-index: 9999;
+    cursor: default;
 }
 
 header {
@@ -19,8 +20,13 @@ color: red; display: flex; justify-content: space-between;
 align-items: center; text-transform: uppercase;
 }
 nav   .logo{
-width: 25%; text-align:center;
+    width: 25%; 
+    text-align:center;
+    transition: letter-spacing .5s;
+}
 
+nav .logo:hover{
+    letter-spacing: 1px;
 }
 
 nav   .menu{
